@@ -3,7 +3,6 @@
 # 1. Project Overview
 This project is a continuation of the Backyard Flyer project where we executed a simple square shaped flight path. In this project we will integrate the techniques that we have learned throughout the last several lessons to plan a path through an urban environment. Check out the [project rubric](https://review.udacity.com/#!/rubrics/1534/view) for more detail on what constitutes a passing submission.
 
-
 ## 1.1 The 2.5D map of the simulator environment is in colliders.csv
 
 [2.5D map](https://... FIXME)
@@ -16,7 +15,7 @@ Video (https://youtu.be/xWD0j_8Z6gg  FIXME) With this path planner, our drone su
 
 # 2. Explain the Starter Code
 
-# 3. Implementing of Path Planning Algorithm
+# 3. Implementing of the Path Planning Algorithm 
 
 ### 3.1. Read and set the global home location
 
@@ -24,4 +23,14 @@ Video (https://youtu.be/xWD0j_8Z6gg  FIXME) With this path planner, our drone su
 
 ### 3.3. Adding flexibility to the start location
 
-### 3.4.  
+### 3.4. Adding flexibility to the goal location
+
+### 3.5. A* algorithm
+Write your search algorithm. Minimum requirement here is to add diagonal motions to the A* implementation provided, and assign them a cost of sqrt(2).
+
+### 3.6. prune path with collinearity
+
+
+# 4. Executing the flight
+
+
