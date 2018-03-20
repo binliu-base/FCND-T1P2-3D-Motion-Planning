@@ -1,9 +1,10 @@
 # FCND - 3D Motion Planning
 
-# 1. Project Overview
-This project is a continuation of the Backyard Flyer project where we executed a simple square shaped flight path. In this project we will integrate the techniques that we have learned throughout the last several lessons to plan a path through an urban environment. Check out the [project rubric](https://review.udacity.com/#!/rubrics/1534/view) for more detail on what constitutes a passing submission.
+### 1. Project Overview
+Goal of this project is to integrate the techniques that we have learned to create a planning solution, Which plan and generate safe and smooth trajectories for a simulated drone through an urban environment in a simulator. 
 
-## 1.1 The 2.5D map of the simulator environment is in colliders.csv
+##### 1.1 The 2.5D map of the urban environment is in colliders.csv
+The colliders.csv file that we used is a 2.5D grid representation showing downtown San Francisco at roughly one meter resolution. We read the global home location from the first line of the colliders.csv file and set that position as global home (self.set_home_position()).  Starting from the third row is the obstacles data in the map, Position of each obstacle is represented by discrete X,Y,Z coordinates, Size of each obstacle is represented by halfSizeX,halfSizeY,halfSizeZ.
 
 [2.5D map](https://... FIXME)
 
@@ -13,24 +14,26 @@ Video (https://youtu.be/xWD0j_8Z6gg  FIXME) With this path planner, our drone su
 ![pathplanner5](https://user-images.githubusercontent.com/24623272/29002135-5933af78-7ace-11e7-8e9a-8fee53692b5f.png FIXME)  -->
 
 
-# 2. Explain the Starter Code
+### 2. Project Rubric
 
-# 3. Implementing of the Path Planning Algorithm 
+#### 2.1. Explain the Starter Code
 
-### 3.1. Read and set the global home location
+#### 2.2 Implementing of the Path Planning Algorithm 
 
-### 3.2. From global position to local position 
+##### Read and set the global home location
 
-### 3.3. Adding flexibility to the start location
+##### From global position to local position 
 
-### 3.4. Adding flexibility to the goal location
+##### Adding flexibility to the start location
 
-### 3.5. A* algorithm
+##### Adding flexibility to the goal location
+
+##### A* algorithm
 Write your search algorithm. Minimum requirement here is to add diagonal motions to the A* implementation provided, and assign them a cost of sqrt(2).
 
-### 3.6. prune path with collinearity
+##### Prune path with collinearity
 
 
-# 4. Executing the flight
+### 3. Executing the flight
 
 
