@@ -6,7 +6,7 @@ Goal of this project is to create a path planner, Which plan and generate safe a
 #### 1.1 The 2.5D map of the urban environment is in colliders.csv
 The colliders.csv file that we used is a 2.5D grid representation showing downtown San Francisco at roughly one meter resolution. We read the global home location from the first line of the colliders.csv file and set that position as global home (self.set_home_position()).  Starting from the third row is the obstacles data in the map, Position of each obstacle is represented by discrete X,Y,Z coordinates, Size of each obstacle is represented by halfSizeX,halfSizeY,halfSizeZ.
 
-[2.5D map](./images/2.5D_map.png)
+![2.5D map](./images/2.5D_map.png)
 
 ### 2. Project Rubric
 
@@ -133,14 +133,14 @@ path, _ = a_star(grid, heuristic, grid_start, grid_goal)
 #### 3.1 flight path 1:  
 Global start position: (37.79530383, -122.39236696, 0.)
 Global goal position: (37.79888362, -122.38779981,0.)
-[path 1](./images/test1.PNG)
+![path 1](./images/test1.PNG)
 
 #### 3.2 flight path 2:  
 Global start position: (37.80067575, -122.3962475, 0.)
 Global goal position: (37.79261344, -122.38836266,0.)
-[path 2](./images/test2.PNG)
+![path 2](./images/test2.PNG)
 
 #### 3.3 flight path 3:  
 Global start position: (37.7959873, -122.38719901, 0.)
 Global goal position: (37.80067575, -122.3962475,0.)
-[path 3](./images/test3.PNG)
+![path 3](./images/test3.PNG)
