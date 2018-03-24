@@ -11,15 +11,14 @@ The colliders.csv file that we used is a 2.5D grid representation showing downto
 ### 2. Project Rubric
 
 #### 2.1. Explain the Starter Code
-motion_planning.py is a evolutionary version of backyard_flyer_solution.py for simple path planning. A new feature in motion_planning.py is automated path planning with a path planner, While in  backyard_flyer_solution.py, we create a simple square shaped flight path manually.  
+motion_planning.py is an evolutionary version of backyard_flyer_solution.py for simple path planning. A new feature in motion_planning.py is automated path planning with a path planner, While in  backyard_flyer_solution.py, we create a simple square shaped flight path manually.  
 
 The following are the modifications between motion_planning.py and backyard_flyer_solution.py. 
 
 - Add a new state (PLANNING) in the finite-state machine, between ARMING and TAKEOFF. 
 - Add a new method plan_path. When the drone is at the state ARMING and it is actually armed (line 66), the transition to the PLANNING state is executed on the method plan_path.
-- The method plan_path define a motion planning pipeline. first, read in the hardcoded global home ([-122.397438, 37.7924766, 0.]) and obstacle map from colliders.csv file (line 130 to 133), second, create a grid representation for the drone's environment with the method create_grid (line 136), which defined  in the planning_utils.py file. third, define start (this is just grid center) and goal point in on the grid (line 139 to 143). fourth, Run the path planner (A* Algorithms) to find a path from start to goal
-(line 150). Simply convert path to waypoints. finally, send the waypoints to simulator.
-
+- The method plan_path define a motion planning pipeline. first, read in the hardcoded global home ([-122.397438, 37.7924766, 0.]) and obstacle map from colliders.csv file (line 130 to 133), second, create a grid representation for the drone's environment with the method create_grid (line 136), which defined in the planning_utils.py file. third, define start (this is just grid center) and a goal point in on the grid (line 139 to 143). fourth, Run the path planner (A* Algorithms) to find a path from start to goal
+(line 150). Simply convert the path to waypoints. finally, send the waypoints to the simulator.
 
 #### 2.2 Implementing of the Path Planning Algorithm 
 
@@ -130,6 +129,9 @@ path, _ = a_star(grid, heuristic, grid_start, grid_goal)
 
 ### 3. Executing the flight
 
+Run the following command to run the project:
+python motion_planning.py --goal_lat=37.795040 --goal_lon=-122.397293 --goal_alt=0.
+
 #### 3.1 flight path 1:  
 start: (37.79530383, -122.39236696, 0.)
 goal: (37.79888362, -122.38779981,0.)
@@ -144,3 +146,5 @@ goal: (37.79261344, -122.38836266,0.)
 start: (37.7959873, -122.38719901, 0.) 
 goal: (37.80067575, -122.3962475,0.)
 ![path 3](./images/test3.PNG)
+
+
