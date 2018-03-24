@@ -129,7 +129,7 @@ path, _ = a_star(grid, heuristic, grid_start, grid_goal)
 
 ### 3. Executing the flight
 
-Run the following command to run the project:
+Run the following command to run the project: 
 python motion_planning.py --goal_lat=37.795040 --goal_lon=-122.397293 --goal_alt=0.
 
 #### 3.1 flight path 1:  
