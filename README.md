@@ -131,16 +131,16 @@ path, _ = a_star(grid, heuristic, grid_start, grid_goal)
 ### 3. Executing the flight
 
 #### 3.1 flight path 1:  
-Global start position: (37.79530383, -122.39236696, 0.)
-Global goal position: (37.79888362, -122.38779981,0.)
+start: (37.79530383, -122.39236696, 0.)
+goal: (37.79888362, -122.38779981,0.)
 ![path 1](./images/test1.PNG)
 
 #### 3.2 flight path 2:  
-Global start position: (37.80067575, -122.3962475, 0.)
-Global goal position: (37.79261344, -122.38836266,0.)
+start: (37.80067575, -122.3962475, 0.)
+goal: (37.79261344, -122.38836266,0.)
 ![path 2](./images/test2.PNG)
 
 #### 3.3 flight path 3:  
-Global start position: (37.7959873, -122.38719901, 0.)
-Global goal position: (37.80067575, -122.3962475,0.)
+start: (37.7959873, -122.38719901, 0.) 
+goal: (37.80067575, -122.3962475,0.)
 ![path 3](./images/test3.PNG)
